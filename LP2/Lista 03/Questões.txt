@@ -1,0 +1,2 @@
+01 - V,V,F,F
+02 -  A classe Médico pode acessar os atributos das subclasses de mesma hierarquia.

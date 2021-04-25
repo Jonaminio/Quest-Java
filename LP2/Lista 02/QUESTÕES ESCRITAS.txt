@@ -1,0 +1,4 @@
+01 - F,V,F,V
+06 - V,V,F,V
+
+III - não, no 0* pode ir de zero a n pedidos
