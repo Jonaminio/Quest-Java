@@ -1,6 +1,8 @@
 
 package vacina;
 
+import java.util.Scanner;
+
 public class Fases extends Pessoa {
 
     public Fases(int id, String nome, int ano, String profi) {
@@ -19,8 +21,35 @@ public class Fases extends Pessoa {
             Fase1();
         }
         if (idade >= 60 && idade <= 74){       
-            Fase1();
+            Fase2();
         }
+        if (idade <= 59){       
+            System.out.println("Possui Alguma das seguintes Comorbidade? ");
+            Comorbidades.mostrar();
+            
+            System.out.println("Digite (1) = Para Sim ");
+            System.out.println("Digite (2) = Para Não ");
+            Scanner teclado = new Scanner(System.in);
+            int a = teclado.nextInt();
+            
+            if (a == 1){
+            Fase3();
+            }
+            if (a == 2){
+                
+            System.out.println("Se encaixa em algum desses casos? ");
+            System.out.println("professores, profissionais das forças de segurança e salvamento, funcionários do sistema prisional e a população privada de liberdade. ");
+            System.out.println("Digite (1) = Para Sim ");
+            System.out.println("Digite (2) = Para Não ");
+                if (a == 1){
+                    Fase4();
+            }
+                else{
+                    System.out.println("Voce esta inapto a receber a vacina"); 
+                    System.exit(0);
+            }
+            }  
+        }       
     } 
     
     static void Fase1() {
