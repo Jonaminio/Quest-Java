@@ -3,19 +3,14 @@ package vacina;
 
 import java.util.Scanner;
 
-public class Fases extends Pessoa {
-
-    public Fases(int id, String nome, int ano, String profi) {
-        super(id, nome, ano, profi);
-    }
+public class Fases{
 
     
-    public void Saber_Fase() {   
-        //pegar tudo da pessoa e calcular a fase e chamar os metodos de fase
-        Comorbidades.mostrar();
+    static void Saber_Fase() {   
        //pegando idade
-        int idade = this.ano - 2021;
-        System.out.println(idade);
+        int idade = 2021 - Pessoa.ano;
+        
+        System.out.println("Voce possui: "+idade);
         
         if (idade >= 75){       
             Fase1();
@@ -41,7 +36,8 @@ public class Fases extends Pessoa {
             System.out.println("professores, profissionais das forças de segurança e salvamento, funcionários do sistema prisional e a população privada de liberdade. ");
             System.out.println("Digite (1) = Para Sim ");
             System.out.println("Digite (2) = Para Não ");
-                if (a == 1){
+            int b = teclado.nextInt();
+                if (b == 1){
                     Fase4();
             }
                 else{
@@ -72,4 +68,5 @@ public class Fases extends Pessoa {
         System.out.println("Fase 4: professores, profissionais das forças de segurança e salvamento, funcionários do sistema prisional e a população privada de liberdade. ");
 
     }
+      
 }
