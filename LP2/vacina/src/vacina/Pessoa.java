@@ -2,7 +2,7 @@ package vacina;
 
 public class Pessoa {
 
-    private int id;
+    protected int id;
     protected String nome;
     static int ano;
     public String profi;

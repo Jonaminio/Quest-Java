@@ -4,7 +4,7 @@ package vacina;
 public class Vacina {
 
     public static void main(String[] args) {
-        System.out.println("Ola, Bem vindo a sua central de Vaninação fora bolsonaro");
+        System.out.println("Ola, Bem vindo a sua central de Vaninação");
         System.out.println("Primeiro vamos saber seu dados");
        // não obrigatorio receber
        Pessoa p2 = new Pessoa(1,"maria",1970,"professora");
