@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Prazo_Vacinacao{
 
-    static void Saber_Vacina() {       
+    static void Saber_Vacina(){       
         //pegar tudo da pessoa e calcular a fase e chamar os metodos de fase
         Scanner teclado = new Scanner(System.in);
 

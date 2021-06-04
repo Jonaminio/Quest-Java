@@ -13,7 +13,7 @@ public class Vacina {
        //Eescolher vacina
        Prazo_Vacinacao.Saber_Vacina();
        //Agradecimentos + Possiveis efeitos
-        System.out.println("Obrigado");
+        System.out.println("Obrigado!");
        
          
     }
