@@ -1,0 +1,8 @@
+
+package np2rev.Questao2;
+
+public interface OperacoesBancarias {
+    public void depositar(double quantia);
+    public void sacar(double quantia);
+    public double saldo();
+}
